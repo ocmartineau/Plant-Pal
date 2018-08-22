@@ -1,5 +1,4 @@
 //Requiring Express and Router for routes
-const express = require("express");
 const router = require("express").Router();
 
 

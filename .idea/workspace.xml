@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3df12325-b3a6-4d9e-9438-781d75903f77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/systemPlantsController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/usersController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/connection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/plantPalcontrollers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userPlantsController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/orm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/usersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/usersController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plantPal.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -65,16 +63,16 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="js" value="18" />
-          <entry key="sql" value="6" />
+          <entry key="js" value="19" />
+          <entry key="sql" value="8" />
           <entry key="users" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="DBN-SQL" value="4" />
+          <entry key="DBN-SQL" value="6" />
           <entry key="Database Element" value="1" />
-          <entry key="JavaScript" value="18" />
+          <entry key="JavaScript" value="19" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="SQL" value="1" />
           <entry key="Scratch" value="1" />
@@ -83,7 +81,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="24" />
-          <entry key="js" value="2707" />
+          <entry key="js" value="3019" />
           <entry key="sql" value="774" />
           <entry key="txt" value="22" />
         </counts>
@@ -91,7 +89,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="DBN-SQL" value="719" />
-          <entry key="JavaScript" value="2707" />
+          <entry key="JavaScript" value="3019" />
           <entry key="PLAIN_TEXT" value="46" />
           <entry key="Scratch" value="55" />
         </counts>
@@ -103,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-end-line="29" />
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -112,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/userPlantsController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="270">
               <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
             </state>
           </provider>
@@ -130,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/usersController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="135">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -145,11 +143,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/connection.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="724">
+              <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -158,25 +156,25 @@
         <entry file="file://$PROJECT_DIR$/models/users.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+              <caret line="4" column="8" selection-end-line="20" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/orm.js">
+        <entry file="file://$PROJECT_DIR$/models/userPlants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="39" column="1" lean-forward="true" selection-start-line="19" selection-end-line="39" selection-end-column="1" />
+            <state relative-caret-position="420">
+              <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="270">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -222,19 +220,19 @@
         <option value="$PROJECT_DIR$/models/Users.js" />
         <option value="$PROJECT_DIR$/models/systemPlants.js" />
         <option value="$PROJECT_DIR$/models/userPlants.js" />
-        <option value="$PROJECT_DIR$/models/users.js" />
         <option value="$PROJECT_DIR$/plantPal.js" />
         <option value="$PROJECT_DIR$/controllers/plantPalcontrollers.js" />
         <option value="$PROJECT_DIR$/controllers/systemPlantsController.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/db/schema.sql" />
-        <option value="$PROJECT_DIR$/config/connection.js" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/90a62df2-1777-43c8-ae88-73dc37753e42/console.sql" />
         <option value="$PROJECT_DIR$/controllers/userPlantsController.js" />
         <option value="$PROJECT_DIR$/controllers/authController.js" />
-        <option value="$PROJECT_DIR$/controllers/usersController.js" />
         <option value="$PROJECT_DIR$/config/orm.js" />
+        <option value="$PROJECT_DIR$/controllers/usersController.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/models/users.js" />
+        <option value="$PROJECT_DIR$/config/connection.js" />
       </list>
     </option>
   </component>
@@ -260,7 +258,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="1076" />
     <option name="width" value="1855" />
     <option name="height" value="1084" />
   </component>
@@ -343,7 +341,7 @@
       <option name="presentableId" value="Default" />
       <updated>1534900763633</updated>
       <workItem from="1534900764849" duration="56000" />
-      <workItem from="1534900851798" duration="26737000" />
+      <workItem from="1534900851798" duration="30545000" />
     </task>
     <task id="LOCAL-00001" summary="adding git ignore">
       <created>1534955609100</created>
@@ -356,7 +354,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26793000" />
+    <option name="totallyTimeSpent" value="30601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -365,7 +363,7 @@
       <window_info id="Project Explorer" order="0" />
       <window_info id="Job Explorer" order="1" />
       <window_info id="DB Browser" order="2" weight="0.32946378" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.25262576" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25262576" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" sideWeight="0.46821448" weight="0.3294979" />
@@ -373,7 +371,7 @@
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Console" order="2" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" sideWeight="0.4997236" weight="0.3294979" />
+      <window_info anchor="bottom" id="Find" order="4" sideWeight="0.4991708" weight="0.3294979" />
       <window_info anchor="bottom" id="Run" order="5" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
@@ -381,9 +379,9 @@
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.4997236" weight="0.3294979" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.5317855" side_tool="true" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.50082916" side_tool="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="right" id="Database" order="0" visible="true" weight="0.20011055" />
+      <window_info anchor="right" id="Database" order="0" weight="0.20011055" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -392,15 +390,15 @@
       <window_info id="Project Explorer" order="0" />
       <window_info id="Job Explorer" order="1" />
       <window_info id="DB Browser" order="2" weight="0.32946378" />
-      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.25262576" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.25262576" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.46821448" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Database Console" order="0" sideWeight="0.46821448" weight="0.3294979" />
       <window_info anchor="bottom" id="DB Execution Console" order="1" sideWeight="0.4997236" weight="0.3294979" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Console" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4997236" weight="0.3294979" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.4991708" weight="0.3294979" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
@@ -408,7 +406,7 @@
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4997236" weight="0.3294979" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.5317855" side_tool="true" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.50082916" side_tool="true" visible="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="right" id="Database" order="0" visible="true" weight="0.20011055" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
@@ -437,13 +435,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/userPlants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -451,38 +442,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/userPlantsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/connection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/90a62df2-1777-43c8-ae88-73dc37753e42/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/systemPlantsController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -496,31 +459,66 @@
     <entry file="file://$PROJECT_DIR$/controllers/authController.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/orm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="1" lean-forward="true" selection-start-line="19" selection-end-line="39" selection-end-column="1" />
+        <state relative-caret-position="-595">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/usersController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="8" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/systemPlantsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/userPlants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="270">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="8" selection-end-line="20" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/userPlantsController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
         </state>
       </provider>
     </entry>

@@ -1,29 +1,24 @@
-// Import the ORM to create functions that will interact with the database.
-var orm = require("../config/orm.js");
+//Pulling in dependency
 
-var users = {
-    all: function(cb) {
-        orm.all("users", function(res) {
-            cb(res);
-        });
+
+const User = db.define('user', {
+    firstName: {
+        type: Sequelize.STRING
     },
-    // The variables cols and vals are arrays.
-    create: function(cols, vals, cb) {
-        orm.create("users", cols, vals, function(res) {
-            cb(res);
-        });
-    },
-    update: function(objColVals, condition, cb) {
-        orm.update("users", objColVals, condition, function(res) {
-            cb(res);
-        });
-    },
-    delete: function(condition, cb) {
-        orm.delete("users", condition, function(res) {
-            cb(res);
-        });
+    lastName: {
+        type: Sequelize.STRING
     }
+});
+
+// force: true will drop the table if it already exists
+User.sync({force: true}).then(() => {
+    // Table created
+    return User.create({
+        firstName: 'John',
+        lastName: 'Hancock'
+    });
+});
 };
 
 // Export the database functions for the controller (usersController.js).
-module.exports = users;
+

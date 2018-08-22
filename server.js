@@ -6,6 +6,7 @@ const morgan = require("morgan");
 const session = require("express-session");
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
+
 const connection = require("./config/connection.js");
 // const systemPlantsController = require("./controllers/systemPlantsController");
 // const userPlantsController = require("./controllers/userPlantsController");
@@ -21,20 +22,20 @@ app.use(morgan('dev'))
 
 // PASSPORT
 
-// passport.use(new LocalStrategy(
-//     function(username, password, done) {
-//         users.findOne({ username: username }, function (err, user) {
-//             if (err) { return done(err); }
-//             if (!user) {
-//                 return done(null, false, { message: 'Incorrect username.' });
-//             }
-//             if (!user.validPassword(password)) {
-//                 return done(null, false, { message: 'Incorrect password.' });
-//             }
-//             return done(null, user);
-//         });
-//     }
-// ));
+passport.use(new LocalStrategy(
+    function(username, password, done) {
+        users.findOne({ username: username }, function (err, user) {
+            if (err) { return done(err); }
+            if (!user) {
+                return done(null, false, { message: 'Incorrect username.' });
+            }
+            if (!user.validPassword(password)) {
+                return done(null, false, { message: 'Incorrect password.' });
+            }
+            return done(null, user);
+        });
+    }
+));
 
 
 app.use(express.static("public"));
