@@ -18,7 +18,7 @@ var connection = mySQL.createConnection({
     password: "calyps0",
 
     //Database to use
-    database: "PlantPalDB",
+    database: "plant_pal",
 })
 
 
