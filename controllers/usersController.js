@@ -1,9 +1,6 @@
-//Requiring Express and Router for routes
-const router = require("express").Router();
-
-
-//Pulling in the three models to use their database functions
-const users = require("../models/users.js");
+var router = require("express").Router();
+var db = require("../config/db");
+const User = db.User;
 
 
 
@@ -12,11 +9,12 @@ router.post("/users", function(req, res) {
     if (req.body.username == null || req.body.password == null || req.body.email == null) {
         return (res.status(400).end())
     } else {
-        users.create([
-                "username", "password", "email"
-            ], [
-                req.body.username, req.body.password, req.body.email,
-            ], function (result) {
+        User.create({
+            "username": req.body.username,
+            "password": req.body.password,
+            "email": req.body.email
+        }).then(
+            function (result) {
                 res.json({result});
             }
         );

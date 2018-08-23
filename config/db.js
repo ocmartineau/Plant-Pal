@@ -3,34 +3,6 @@
 var mySQL = require("mysql");
 
 
-//Initialize connection to MySQL database with variable
-
-var connection = mySQL.createConnection({
-    host: "localhost",
-
-    //Port using
-    port: 3306,
-
-    //SQL Username
-    user: "root",
-
-    //Password
-    password: "calyps0",
-
-    //Database to use
-    database: "plant_pal",
-})
-
-
-connection.connect(function (err) {
-    if (err) {
-        console.error("error connecting: " + err.stack);
-        return;
-    }
-    console.log("connected as id " + connection.threadId);
-});
-
-
 //Sequelize
 
 const Sequelize = require('sequelize');
@@ -68,19 +40,39 @@ const User = db.define('user', {
     }
 });
 
-const systemPlants = db.define('systemPlants', {
+const SystemPlant = db.define('systemPlant', {
     name: {
         type: Sequelize.STRING
     }
 });
 
-const userPlants = db.define('userPlants', {
+const UserPlant = db.define('userPlant', {
     name: {
         type: Sequelize.STRING
     }
 });
 
-userPlants.belongsTo(User);
+const ScheduleDay= db.define('scheduleDay', {
+    name: {
+        type: Sequelize.STRING
+    },
+});
+
+ScheduleDay.belongsToMany(UserPlant, {through: 'userPlantSchedule'});
+UserPlant.belongsToMany(ScheduleDay, {through: 'userPlantSchedule'});
+
+
+
+UserPlant.belongsTo(User);
+
+db.sync({
+    force: true
+}).then(() => {
+    module.exports.User = User;
+    module.exports.SystemPlant = SystemPlant;
+    module.exports.UserPlant = UserPlant;
+    module.exports.ScheduleDay = ScheduleDay;
+});
 
 
 // // force: true will drop the table if it already exists
@@ -92,4 +84,3 @@ userPlants.belongsTo(User);
 //     });
 // });
 
-module.exports = connection;

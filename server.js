@@ -7,7 +7,7 @@ const session = require("express-session");
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
-const connection = require("./config/connection.js");
+const connection = require("./config/db.js");
 // const systemPlantsController = require("./controllers/systemPlantsController");
 // const userPlantsController = require("./controllers/userPlantsController");
 const usersController = require("./controllers/usersController");
