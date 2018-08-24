@@ -1,12 +1,6 @@
 //Initialize NPM packages
-
-var mySQL = require("mysql");
-
-
-//Sequelize
-
-const Sequelize = require('sequelize');
-const db = new Sequelize('plant_pal', 'root', 'calyps0', {
+var Sequelize = require('sequelize');
+var db = new Sequelize('plant_pal', 'root', 'calyps0', {
     host: 'localhost',
     dialect: 'mysql',
     operatorsAliases: false,
@@ -19,16 +13,8 @@ const db = new Sequelize('plant_pal', 'root', 'calyps0', {
     },
 });
 
-db.authenticate()
-    .then(() => {
-        console.log('Sequelize connection has been established successfully.');
-    })
-    .catch(err => {
-        console.error('Unable to connect to the database:', err);
-    });
 
-
-const User = db.define('user', {
+var User = db.define('User', {
     username: {
         type: Sequelize.STRING
     },
@@ -40,19 +26,19 @@ const User = db.define('user', {
     }
 });
 
-const SystemPlant = db.define('systemPlant', {
+var SystemPlant = db.define('systemPlant', {
     name: {
         type: Sequelize.STRING
     }
 });
 
-const UserPlant = db.define('userPlant', {
+var UserPlant = db.define('userPlant', {
     name: {
         type: Sequelize.STRING
     }
 });
 
-const ScheduleDay= db.define('scheduleDay', {
+var ScheduleDay= db.define('scheduleDay', {
     name: {
         type: Sequelize.STRING
     },
@@ -65,14 +51,15 @@ UserPlant.belongsToMany(ScheduleDay, {through: 'userPlantSchedule'});
 
 UserPlant.belongsTo(User);
 
-db.sync({
-    force: true
-}).then(() => {
-    module.exports.User = User;
-    module.exports.SystemPlant = SystemPlant;
-    module.exports.UserPlant = UserPlant;
-    module.exports.ScheduleDay = ScheduleDay;
-});
+// db.sync({
+//     force: true
+//
+// }).then(() => {
+    module.exports = {
+        'User' : User,
+        'UserPlant': UserPlant
+    };
+// });
 
 
 // // force: true will drop the table if it already exists
